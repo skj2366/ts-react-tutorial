@@ -1,9 +1,12 @@
 import React from 'react';
 import ReducerSample from './ReducerSample';
+import { SampleProvider } from './SampleContext';
 
 const App: React.FC = () => {
    return (
-    <ReducerSample />
+     <SampleProvider>
+      <ReducerSample />
+    </SampleProvider>
   );
 }
 
